@@ -1,60 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio Profissional</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Stylesheet -->
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="css/vendor/brands.css">
+    <link rel="stylesheet" href="css/vendor/regular.css">
+    <link rel="stylesheet" href="css/vendor/solid.css">
+    <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Home</title>
 </head>
+
 <body>
-    <header class="hero">
-        <nav>
-            <div class="logo">Meu Portfólio</div>
-            <ul>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="hero-content">
-            <h1>Bem-vindo ao Meu Portfólio</h1>
-            <p>Desenvolvedor Web | Designer | Freelancer</p>
-            <a href="#projects" class="btn">Veja meus Projetos</a>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
+    <script src="js/submit-form.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+
+    <!-- Header -->
+    <section class="fixed-top" id="header">
+        <div class="r-container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="logo-container">
+                        <img src="image/logo.png" alt="" class="img-fluid">
+                    </div>
+                    <button class="navbar-toggler border-0 accent-color" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                    <div class="collapse navbar-collapse px-3 px-lg-0  pb-3 pb-lg-0" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 font-1 gap-lg-4">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="#home" >Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="#about">Sobre</a>
+                           
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="#portifolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="#contacto">Contacte-me</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <a type="button" href="" class="font-2">GET STARTED</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </header>
-
-    <section id="about" class="about">
-        <h2>Sobre Mim</h2>
-        <p>Sou um desenvolvedor web apaixonado por criar soluções inovadoras e eficientes. Tenho experiência em diversas tecnologias e estou sempre buscando aprender mais.</p>
     </section>
+    <!-- End Header -->
 
-    <section id="projects" class="projects">
-        <h2>Meus Projetos</h2>
-        <div class="project-card">
-            <h3>Projeto 1</h3>
-            <p>Descrição do Projeto 1.</p>
-            <a href="https://github.com/usuario/projeto1" target="_blank">Ver no GitHub</a>
-        </div>
-        <div class="project-card">
-            <h3>Projeto 2</h3>
-            <p>Descrição do Projeto 2.</p>
-            <a href="https://github.com/usuario/projeto2" target="_blank">Ver no GitHub</a>
-        </div>
-        <!-- Adicione mais projetos conforme necessário -->
-    </section>
+    <main>
+        <section class="section image-infinite-bg position-relative"
+            style="background-size: cover; background-position: center ;padding: 15em 1em 15em 1em;"
+            data-images='["image/dummy-img-1920x900.jpg", "image/dummy-img-1920x900.jpg", "image/dummy-img-1920x900.jpg"]' id="home">
+            <div class="r-container h-100">
+                <div class="image-overlay"></div>
+                <div class="d-flex flex-column justify-content-center text-center gap-3 h-100 position-relative"
+                    style="z-index: 2;">
+                    <div class="divider divider-before mx-auto">
+                        <span class="accent-color fs-5 mx-3">LET IT BE AMAZING</span>
+                    </div>
+                    <h2 class="text-title text-white fw-bold font-1 lh-1">Professional Studio Photography</h2>
+                    <p class="text-white f-18 text-font mx-auto" style="max-width: 768px;">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <div>
+                        <a type="button" href="#portifolio" class="btn text-font rounded-0 font-1">VIEW PORTFOLIO</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact" class="contact">
-        <h2>Contato</h2>
-        <p>Você pode entrar em contato comigo através das seguintes plataformas:</p>
-        <ul>
-            <li>Email: <a href="mailto:email@exemplo.com">email@exemplo.com</a></li>
-            <li>LinkedIn: <a href="https://linkedin.com/in/usuario" target="_blank">Meu LinkedIn</a></li>
-            <li>GitHub: <a href="https://github.com/usuario" target="_blank">Meu GitHub</a></li>
-        </ul>
-    </section>
+<!-- Sobre Mim -->
+        <section class="section position-relative" id="about">
+            <div class="r-container">
+                <div class="image-overlay-3"></div>
+                <div class="position-relative" style="z-index: 2;">
+                    <div class="row row-cols-1 row-cols-lg-2">
+                        <div class="col">
+                            <img src="image/dummy-img-600x800.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col">
+                            <div class="d-flex flex-column justify-content-center gap-3 h-100">
+                                <div class="divider mb-3">
+                                    <span class="accent-color fs-5 me-3">HI I'M ALEX</span>
+                                </div>
+                                <h4 class="text-title text-white fw-bold font-1 lh-1">Professional Photographer</h4>
+                                <p class="text-white f-18 text-font my-4">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut
+                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                    ea
+                                    commodo consequat.
+                                </p>
+                                <div class="my-4">
+                                    <img src="image/TTD.png" alt="" class="img-fluid" style="max-width: 300px;">
+                                </div>
+                                <div class="d-flex flex-row gap-3 ">
+                                    <a type="button" href=""
+                                        class="social-item p-2 d-flex align-items-center justify-content-center">
+                                        <i class="fa-brands fa-dribbble"></i>
+                                    </a>
+                                    <a type="button" href=""
+                                        class="social-item p-2 d-flex align-items-center justify-content-center">
+                                        <i class="fa-brands fa-behance"></i>
+                                    </a>
+                                    <a type="button" href=""
+                                        class="social-item p-2 d-flex align-items-center justify-content-center">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                    <a type="button" href=""
+                                        class="social-item p-2 d-flex align-items-center justify-content-center">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
 
-    <footer>
-        <p>&copy; 2024 Meu Nome. Todos os direitos reservados.</p>
+        <section class="section overflow-hidden" id="portifolio">
+            <div class="r-container">
+                <div class="d-flex flex-column justify-content-center align-items-center mb-4">
+                    <div class="divider divider-before mb-3 mx-auto">
+                        <span class="accent-color fs-5 mx-3">OUR PORTFOLIO</span>
+                    </div>
+                    <h4 class="text-title text-white fw-bold font-1 lh-1">Latest Work.</h4>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper-carousel" class="max-width:440px">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="image/dummy-img-900x600.jpg" alt="" class="img-fluid w-100"></div>
+                        <div class="swiper-slide"><img src="image/dummy-img-900x600.jpg" alt="" class="img-fluid w-100"></div>
+                        <div class="swiper-slide"><img src="image/dummy-img-900x600.jpg" alt="" class="img-fluid w-100"></div>
+                        <div class="swiper-slide"><img src="image/dummy-img-900x600.jpg" alt="" class="img-fluid w-100"></div>
+                        <div class="swiper-slide"><img src="image/dummy-img-900x600.jpg" alt="" class="img-fluid w-100"></div>
+                        <div class="swiper-slide"><img src="image/dummy-img-900x600.jpg" alt="" class="img-fluid w-100"></div>
+                        <div class="swiper-slide"><img src="image/dummy-img-900x600.jpg" alt="" class="img-fluid w-100"></div>
+                        <div class="swiper-slide"><img src="image/dummy-img-900x600.jpg" alt="" class="img-fluid w-100"></div>
+                        <div class="swiper-slide"><img src="image/dummy-img-900x600.jpg" alt="" class="img-fluid w-100"></div>        
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination position-relative"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="r-container">
+                <div class="d-flex flex-column justify-content-center align-items-center mb-4">
+                    <div class="divider divider-before mb-3 mx-auto">
+                        <span class="accent-color fs-5 mx-3">SKILLS</span>
+                    </div>
+                    <h4 class="text-title text-white fw-bold font-1 lh-1">Team Skills.</h4>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col col-lg-5 mb-4">
+                        <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore </p>
+                        <div class="d-flex flex-column gap-4">
+                            <div class="r-progress w-100" style="--value:95;">
+                                <span class="text-white font-2">Photography</span>
+                                <div class="progress-container mt-2">
+                                    <div class="r-progress-bar percentage-label">
+                                        <div class="progress-value"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r-progress w-100" style="--value:75;">
+                                <span class="text-white font-2">Marketing</span>
+                                <div class="progress-container mt-2">
+                                    <div class="r-progress-bar percentage-label">
+                                        <div class="progress-value"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r-progress w-100" style="--value:85;">
+                                <span class="text-white font-2">Videography</span>
+                                <div class="progress-container mt-2">
+                                    <div class="r-progress-bar percentage-label">
+                                        <div class="progress-value"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r-progress w-100" style="--value:80;">
+                                <span class="text-white font-2">Design</span>
+                                <div class="progress-container mt-2">
+                                    <div class="r-progress-bar percentage-label">
+                                        <div class="progress-value"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-7">
+                        <img src="image/dummy-img-900x500.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="r-container">
+                <div class="d-flex flex-column justify-content-center align-items-center text-center gap-3">
+                    <h4 class="text-white font-1 fw-bold fs-1">Take your moment with Codagraph</h4>
+                    <p class="text-gray" style="max-width: 768px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <a href="" type="button" class="btn rounded-0">GET STARTED</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section position-relative">
+            <div class="r-container">
+                <div class="d-flex flex-column justify-content-center align-items-center mb-4">
+                    <div class="divider divider-before mb-3 mx-auto">
+                        <span class="accent-color fs-5 mx-3">OUR SERVICES</span>
+                    </div>
+                    <h4 class="text-title text-white fw-bold font-1 lh-1">What We Do.</h4>
+                </div>
+                <div class="image-overlay-2"></div>
+                <div class="d-flex flex-column gap-3 position-relative" style="z-index: 2;">
+                    <div class="row row-cols-1 row-cols-lg-3">
+                        <div class="col px-3">
+                            <div class="d-flex flex-column gap-3">
+                                <img src="image/icon-1.png" alt="" srcset="" class="img-fluid img-icon">
+                                <h5 class="text-white font-1">Fashion Photography</h5>
+                                <p class="text-gray">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col px-3">
+                            <div class="d-flex flex-column gap-3">
+                                <img src="image/icon-2.png" alt="" srcset="" class="img-fluid img-icon">
+                                <h5 class="text-white font-1">Portrait Photography</h5>
+                                <p class="text-gray">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col px-3">
+                            <div class="d-flex flex-column gap-3">
+                                <img src="image/icon-3.png" alt="" srcset="" class="img-fluid img-icon">
+                                <h5 class="text-white font-1">Landscape Photography</h5>
+                                <p class="text-gray">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="" type="button">All Services</a>
+                    </div>
+                </div>
+        </section>
+
+        <section class="section bg-secondary-dark">
+            <div class="r-container">
+                <div class="row row-cols-1 row-cols-lg-6">
+                    <div class="col mb-3 mb-lg-0">
+                        <img src="image/logo-ipsum-1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col mb-3 mb-lg-0">
+                        <img src="image/logo-ipsum-2.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col mb-3 mb-lg-0">
+                        <img src="image/logo-ipsum-3.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col mb-3 mb-lg-0">
+                        <img src="image/logo-ipsum-4.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col mb-3 mb-lg-0">
+                        <img src="image/logo-ipsum-5.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col mb-3 mb-lg-0">
+                        <img src="image/logo-ipsum-6.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contacto">
+            <div class="r-container">
+                <div class="d-flex flex-column justify-content-center align-items-center mb-4">
+                    <div class="divider divider-before mb-3 mx-auto">
+                        <span class="accent-color fs-5 mx-3">GET IN TOUCH</span>
+                    </div>
+                    <h4 class="text-title text-white fw-bold font-1 lh-1">Contact Us.</h4>
+                    <p class="text-gray" align="center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris.
+                    </p>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col">
+                        <div class="h-100 d-flex flex-column">
+                            
+                            <div class="row row-cols-1 row-cols-lg-2 mt-5">
+                            <div class="col mb-3">
+                                <div class="d-flex flex-row align-items-center gap-3">
+                                    <i class="fa-solid fa-phone accent-color fs-1"></i>
+                                    <div class="d-flex flex-column">
+                                        <h6 class="text-white font-1">Phone</h6>
+                                        <span class="text-gray">345 563 23</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="d-flex flex-row align-items-center gap-3">
+                                    <i class="fa-solid fa-earth-asia accent-color fs-1"></i>
+                                    <div class="d-flex flex-column">
+                                        <h6 class="text-white font-1">Site</h6>
+                                        <span class="text-gray">www.awesomesite.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-3">
+                        <div class="row row-cols-1 row-cols-lg-2 mt-5">
+                            <div class="col mb-3">
+                                <div class="d-flex flex-row align-items-center gap-3">
+                                    <i class="fa-solid fa-envelope accent-color fs-1"></i>
+                                    <div class="d-flex flex-column">
+                                        <h6 class="text-white font-1">Email</h6>
+                                        <span class="text-gray">hello@awesomesite.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="d-flex flex-row align-items-center gap-3">
+                                    <i class="fa-solid fa-location-dot accent-color fs-1"></i>
+                                    <div class="d-flex flex-column">
+                                        <h6 class="text-white font-1">Address</h6>
+                                        <span class="text-gray">99 Roving St., Big City, PKU 23456</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+ <!-- Footer section -->
+    <footer id="">
+        <section class="section position-relative" style="background-image: url(image/dummy-img-1920x900.jpg);">
+            <div class="r-container">
+                <div class="overlay"></div>
+                <div class="d-flex justify-content-center align-items-center flex-column position-relative"
+                    style="z-index: 2;">
+                    <div class="mb-4">
+                        <img src="image/logo.png" alt="" class="img-fluid">
+                    </div>
+                    <h4 class="text-white font-2 mb-4">Stay in Touch</h4>
+                    <p class="text-gray font-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                    <form action="" class="w-100 form needs-validation">
+                        <div class="mb-3">
+                            <input type="text" class="form-control p-3" name="name" id="name" placeholder="Name"
+                                required>
+                            <div class="invalid-feedback">
+                                The field is required.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control p-3" name="email" id="email"
+                                placeholder="Email" required>
+                            <div class="invalid-feedback">
+                                The field is required.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message" name="message" rows="5"
+                                placeholder="Message"></textarea>
+                        </div>
+                        <div class="mb-3" align="center">
+                            <button type="submit" class="btn submit_form font-1 py-3">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                        <div class="success_msg toast align-items-center w-100 shadow-none mb-3 bg-transparent border border-success rounded-0 my-4"
+                                role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="d-flex p-2">
+                            <div class="toast-body f-18 d-flex flex-row gap-3 align-items-center text-success">
+                                <i class="fa-solid fa-check f-36 text-success"></i>
+                                Your Message Successfully Send.
+                            </div>
+                            <button type="button"
+                                class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-success"
+                                data-bs-dismiss="toast" aria-label="Close"><i
+                                    class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="error_msg toast align-items-center w-100 shadow-none border-danger mb-3 bg-transparent my-4 border rounded-0"
+                                role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="d-flex p-2">
+                            <div class="toast-body f-18 d-flex flex-row gap-3 align-items-center text-danger">
+                                <i class="fa-solid fa-triangle-exclamation f-36 text-danger"></i>
+                                Something Wrong ! Send Form Failed.
+                            </div>
+                            <button type="button"
+                                class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-danger"
+                                data-bs-dismiss="toast" aria-label="Close"><i
+                                    class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="py-5">
+            <div class="r-container">
+                <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="d-flex flex-row gap-3 mb-4">
+                        <a type="button" href="https://www.facebook.com"
+                            class="social-item p-2 d-flex align-items-center justify-content-center">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a type="button" href="https://www.dribble.com.com"
+                            class="social-item p-2 d-flex align-items-center justify-content-center">
+                            <i class="fa-brands fa-dribbble"></i>
+                        </a>
+                        <a type="button" href="https://www.behance.com"
+                            class="social-item p-2 d-flex align-items-center justify-content-center">
+                            <i class="fa-brands fa-behance"></i>
+                        </a>
+                        <a type="button" href="https://www.twitter.com"
+                            class="social-item p-2 d-flex align-items-center justify-content-center">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a type="button" href="https://www.instagram.com"
+                            class="social-item p-2 d-flex align-items-center justify-content-center">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    <span class="text-gray font-1">Copyright Codagraph Studio © All rights Reserved 2023. Design by
+                        Rometheme</span>
+                </div>
+            </div>
+        </section>
     </footer>
+    <script src="js/vendor/fslightbox.js"></script>
+    <script src="js/masonry.js"></script>
 </body>
+
 </html>
