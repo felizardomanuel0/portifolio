@@ -1,3 +1,26 @@
+/* Bullets vermelhos na seção Sobre */
+.accent-bullet {
+    position: relative;
+    padding-left: 1.2em;
+    margin-bottom: 0.5em;
+}
+.accent-bullet::marker, .accent-bullet::before {
+    color: var(--accent-color);
+    font-size: 1.1em;
+}
+/* Accordion Skill Custom */
+.skill-accordion-btn .skill-icon {
+    transition: transform 0.2s;
+    margin-left: auto;
+    font-size: 1.2em;
+}
+.skill-accordion-btn:not(.collapsed) .skill-icon {
+    transform: rotate(45deg);
+    color: var(--accent-color);
+}
+.skill-accordion-btn:not(.collapsed) .skill-title {
+    color: var(--accent-color);
+}
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
