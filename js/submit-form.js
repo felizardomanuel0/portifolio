@@ -1,10 +1,8 @@
 $(function () {
     'use strict';
 
-    // Ambil semua formulir yang ingin kita terapkan gaya validasi kustom Bootstrap
     const forms = $('.needs-validation');
 
-    // Loop melalui formulir dan mencegah pengiriman
     forms.on('submit', function (event) {
         const form = $(this);
 
@@ -15,8 +13,8 @@ $(function () {
             event.stopPropagation();
         } else {
             event.preventDefault();
-            $('.submit_form').html('Sending...');
-            $('.btn_submit-subscribe').html('Sending...');
+            $('.submit_form').html('Enviando...');
+            $('.btn_submit-subscribe').html('Enviando...');
             const toast = new bootstrap.Toast($('.success_msg')[0]);
             const errtoast = new bootstrap.Toast($('.error_msg')[0]);
             var formData = forms.serialize();
@@ -27,18 +25,18 @@ $(function () {
                 success: function (response) {
                     if (response == 'success') {
                         if (actionInput.length > 0) {
-                            $('.btn_submit-subscribe').html('Subscribe');
+                            $('.btn_submit-subscribe').html('Subscrever');
                             const toast_subscribe = new bootstrap.Toast($('.success_msg_subscribe')[0]);
                             toast_subscribe.show();
                         } else {
                             toast.show()
-                            $('.submit_form').html('Send Message');                            
+                            $('.submit_form').html('Enviar mensagem');                            
                         }
 
                     } else {
                         errtoast.show()
-                        $('.submit_form').html('Send Message');
-                        $('.btn_submit-subscribe').html('Subscribe');
+                        $('.submit_form').html('Enviar mensagem');
+                        $('.btn_submit-subscribe').html('Subscrever');
                     }
                 }
             });
