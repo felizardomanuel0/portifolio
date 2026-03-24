@@ -2,37 +2,37 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['action']) and $_POST['action'] == 'Subscribe' ) {
         $email = $_POST["email"];
-        $subject = "Subject Subscribe Email"; // Replace your Subject Here
-        $to = "felizardomachica@gmail.com"; // Replace your Email Here
+        $subject = "Nova subscrição no portfólio";
+        $to = "felizardomachica@gmail.com";
         $headers = "From: $email\r\n";
         $headers .= "Reply-To: $email\r\n";
         $headers .= "Content-type: text/html\r\n";
-        $message = "Subscribe Message"; // Replace Your Message Subscribe
+        $message = "Pedido de subscrição enviado através do portfólio.";
 
-        $messageBody = "Email: $email<br>Message: $message";
+        $messageBody = "Email: $email<br>Mensagem: $message";
 
         if (mail($to, $subject, $messageBody, $headers)) {
-            echo "success"; // Send response Success
+            echo "success";
         } else {
-            echo "error"; // Send Response Failed Send Mail
+            echo "error";
         }
     } else {
         $name = $_POST["name"];
         $email = $_POST["email"];
         $message = $_POST["message"];
-        $subject = "Subject Email"; // Replace your Subject Here
+        $subject = "Nova mensagem enviada pelo portfólio";
 
-        $to = "felizardomachica@gmail.com"; // Replace your Email Here
+        $to = "felizardomachica@gmail.com";
         $headers = "From: $email\r\n";
         $headers .= "Reply-To: $email\r\n";
         $headers .= "Content-type: text/html\r\n";
 
-        $messageBody = "Name: $name<br>Email: $email<br>Message: $message";
+        $messageBody = "Nome: $name<br>Email: $email<br>Mensagem: $message";
 
         if (mail($to, $subject, $messageBody, $headers)) {
-            echo "success"; // Send response Success
+            echo "success";
         } else {
-            echo "error"; // Send Response Failed Send Mail
+            echo "error";
         }
     }
 }

@@ -399,6 +399,10 @@ a {
 
 .image-infinite-bg {
     height: 100vh;
+    background-color: var(--dark-bg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 102%;
 }
 
 .animation-bg {
@@ -413,6 +417,17 @@ a {
 
 .img-icon{
     width: 5rem;
+}
+
+.float-photo,
+.float-signature {
+    animation: floating_effect 4.5s ease-in-out infinite;
+    will-change: transform;
+}
+
+.float-signature {
+    animation-duration: 5.5s;
+    animation-delay: 0.35s;
 }
 
 
@@ -430,11 +445,22 @@ a {
 
 @keyframes background_animation {
     from {
-        background-size: 100%;
+        background-size: 102%;
     }
 
     to {
-        background-size: 110%;
+        background-size: 112%;
+    }
+}
+
+@keyframes floating_effect {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
     }
 }
 
